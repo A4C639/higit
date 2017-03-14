@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#339999"
+    android:gravity="center">
+
+
+    <TextView
+        android:paddingBottom="60dp"
+        android:gravity="center"
+        android:id="@+id/tv_aty_guide_logo"
+        android:text="compus"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>

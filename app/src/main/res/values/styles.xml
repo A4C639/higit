@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--左侧抽屉页面 选项Reletive的样式-->
+
+    <style name="drawer_left_item">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/normal_rapple</item>
+        <item name="android:gravity">center_vertical</item>
+        </style>
+    <!--左侧抽屉页面中 Relativelayout中textview的样式-->
+    <style name="drawer_left_textview">
+        <item name="android:textColor">#339999</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <!--activity主题-->
+    <style name="Theme.Timetodo" parent="@android:style/Theme.Holo.Light">
+        <!-- translucent system bars -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <!---->
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ckeckbox_bg</item>
+    </style>
+
+
+</resources>

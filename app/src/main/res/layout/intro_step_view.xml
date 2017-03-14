@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+    android:gravity="center_vertical">
+
+    <!--预约-->
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_step_order"
+            android:gravity="center"
+            android:text="预约"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/dot_order"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/intro_circle_bg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                />
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_get"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_step_get"
+            android:gravity="center"
+            android:text="取件"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/dot_get"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/intro_circle_bg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                 />
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wash"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_step_wash"
+            android:gravity="center"
+            android:text="洗涤"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/dot_wash"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/intro_circle_bg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                 />
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_care"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_step_care"
+            android:gravity="center"
+            android:text="护理"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/dot_care"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/intro_circle_bg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                 />
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_send"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_step_send"
+            android:gravity="center"
+            android:text="送回"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/dot_send"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/intro_circle_bg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                />
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_complete"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_step_complete"
+            android:gravity="center"
+            android:text="完成"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/dot_complete"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/intro_circle_bg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                 />
+            <View
+                android:layout_weight="1"
+                android:background="#339999"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

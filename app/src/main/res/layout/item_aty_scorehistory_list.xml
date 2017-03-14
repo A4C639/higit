@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_aty_item_scorehistory_desc"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="aggagfffff"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_item_aty_scorehistory_del"
+                android:background="@drawable/normal_white_grery_bg"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_more_vert_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <com.facebook.drawee.view.SimpleDraweeView
+            fresco:actualImageScaleType="centerCrop"
+            android:id="@+id/sdv_item_aty_scorehistory_icon"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_aty_item_scorehistory_score"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:text="aggagfffff"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:background="#c0c0c0"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+
+
+</LinearLayout>

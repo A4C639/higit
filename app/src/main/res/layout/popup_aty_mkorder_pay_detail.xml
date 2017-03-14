@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:text="付款详情"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:id="@+id/iv_aty_popup_mkorder_close"
+                        android:clickable="true"
+                        android:layout_gravity="end"
+                        android:src="@mipmap/ic_close_pressed"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </RelativeLayout>
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"></View>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_popup_aty_mkorder_bank"
+                    android:clickable="true"
+                    android:background="@drawable/normal_white_grery_bg"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Compus余额支付"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_keyboard_arrow_right_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_popup_aty_mkorder_discount"
+                    android:clickable="true"
+                    android:background="@drawable/normal_white_grery_bg"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/tv_popup_aty_mkorder_discount_desc"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="优惠券"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_keyboard_arrow_right_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@drawable/normal_white_grery_bg"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="支付金额"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_popup_aty_mkorder_total"
+                        android:textColor="#f47515"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_popup_aty_mkorder_pay"
+                    android:clickable="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="确认付款"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:background="@drawable/normal_click_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

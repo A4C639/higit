@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_frg_identity_parent"
+    android:background="#f9f9f9">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:clickable="true"
+                    fresco:roundAsCircle="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/sdv_frg_identity_uportrait"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    fresco:roundingBorderColor="#339999"
+                    fresco:roundingBorderWidth="1dp"
+                    fresco:placeholderImage="@mipmap/ic_account_circle_pressed"
+                    />
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_frg_identity_login"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/sdv_frg_identity_uportrait"
+                    android:textColor="#339999"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即登陆"
+                    />
+                <TextView
+                    android:id="@+id/tv_frg_identity_charge"
+                    android:gravity="center_vertical"
+                    android:textColor="#339999"
+                    android:drawableRight="@mipmap/ic_keyboard_arrow_right_normal"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="充值"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:padding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="我的钱包"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_credit_card_pressed"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#339999"
+                    android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:background="@drawable/frg_identity_bg1"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_frg_balance_value"
+                            android:text="0.00元"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_frg_balance_value"
+                            android:text="余额"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_frg_count_value"
+                            android:text="2张"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_frg_balance_value"
+                            android:text="优惠券"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_frg_score_value"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_frg_balance_value"
+                            android:text="积分"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_frg_identity_address"
+                    android:clickable="true"
+                    android:background="@drawable/normal_rapple"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:drawablePadding="20dp"
+                        android:textSize="15dp"
+                        android:text="常用地址"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/ic_room_pressed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_frg_identity_score"
+                    android:clickable="true"
+                    android:background="@drawable/normal_rapple"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:drawablePadding="20dp"
+                        android:textSize="15dp"
+                        android:text="积分商城"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/ic_shopping_basket_pressed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_frg_identity_discount"
+                    android:clickable="true"
+                    android:background="@drawable/normal_rapple"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:drawablePadding="20dp"
+                        android:textSize="15dp"
+                        android:text="优惠券"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/ic_card_giftcard_pressed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll_frg_identity_security"
+                android:clickable="true"
+                android:background="@drawable/normal_rapple"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:drawablePadding="20dp"
+                    android:textSize="15dp"
+                    android:text="安全设置"
+                    android:padding="5dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/ic_fingerprint_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

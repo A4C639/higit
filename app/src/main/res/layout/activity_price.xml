@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_aty_thing_top"
+        android:background="#339999"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_aty_new_price_back"
+            android:background="@drawable/my_app_theme_click_ripple_bg"
+            android:clickable="true"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="价目表"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:background="#fff"
+        android:id="@+id/tab_aty_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabSelectedTextColor="#339999"
+        app:tabTextColor="#737171"
+        app:tabIndicatorColor="#339999"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="1dp"
+        android:scrollIndicators="bottom"
+        app:tabMode="fixed"
+        ></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_aty_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

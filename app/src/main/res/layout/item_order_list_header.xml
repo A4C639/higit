@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_header_mkorder">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/ll_rv_mkorder_list_header"
+        android:clickable="true"
+        android:padding="10dp"
+        android:background="@drawable/bg_index_left_item"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="20sp"
+                    android:text="收货人"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_aty_mkorder_receiver"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="IU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_aty_mkorder_phone"
+                    android:text="182999999333"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_item_order_list_address"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="地址"
+                    android:drawableLeft="@mipmap/ic_location_city_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@mipmap/ic_keyboard_arrow_right_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+</LinearLayout>

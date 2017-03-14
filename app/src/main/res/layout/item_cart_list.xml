@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+        <CheckBox
+            android:layout_weight="1"
+            android:id="@+id/cb_item_cart_list"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_item_cart_list_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_item_cart_list_name"
+            android:layout_marginLeft="10dp"
+            android:text="name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_item_cart_list_price"
+            android:text="888"
+            android:layout_marginLeft="10dp"
+            android:textColor="#802a2a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginRight="40dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:clickable="true"
+                android:id="@+id/iv_item_cart_list_remove"
+                android:background="@drawable/item_cart_list_counter_num"
+                android:src="@mipmap/ic_remove_pressed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_item_cart_list_count_num"
+                android:background="@drawable/item_cart_list_counter_num"
+                android:gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_weight="1"
+                android:clickable="true"
+                android:id="@+id/iv_item_cart_list_add"
+                android:background="@drawable/item_cart_list_counter_num"
+                android:src="@mipmap/ic_add_pressed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

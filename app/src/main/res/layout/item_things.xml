@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#f9f9f9">
+
+    <FrameLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/item_things_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_item_things_top_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_item_things_outer_clickable"
+            android:clickable="true"
+            android:background="@drawable/item_things_outer_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_item_things_top_name"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="thingname"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_item_things_top_price"
+                android:drawableLeft="@mipmap/ic_attach_money_normal"
+                android:text="price"
+                android:textStyle="italic"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

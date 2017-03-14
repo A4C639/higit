@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_aty_popup_shopitem_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tv_popup_aty_popup_shopitem_buy"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="购买"
+                android:background="@drawable/normal_click_bg"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/iv_aty_popup_shopitem_close"
+                android:clickable="true"
+                android:layout_gravity="end"
+                android:src="@mipmap/ic_close_pressed"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </android.support.v7.widget.CardView>
+        </FrameLayout>
+
+</LinearLayout>

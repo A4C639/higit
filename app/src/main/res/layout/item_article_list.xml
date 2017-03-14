@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_item_article_list_time"
+                android:layout_centerVertical="true"
+                android:text="2017-1-31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#f47a08"
+                android:layout_centerVertical="true"
+                android:text="交易完成"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/lv_frg_bilist_thing_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="#a74747"
+                    android:id="@+id/tv_item_article_list_total"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="888"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:background="#d6d3d3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"></View>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_item_article_list_comment"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:text="评价"
+                    android:background="@drawable/normal_click_bg"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/tv_item_article_list_del"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/tv_item_article_list_comment"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:text="删除订单"
+                    android:background="@drawable/normal_click_bg"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+          <LinearLayout
+              android:background="#339999"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="40dp">
+              <TextView
+                  android:textColor="#fff"
+                  android:gravity="center"
+                  android:text="物品"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:textColor="#fff"
+                  android:gravity="center"
+                  android:text="洗护周期"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:textColor="#fff"
+                  android:text="价格"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="t恤"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="2天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="10元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="冲锋衣"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="4天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="30元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="卫衣"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="3天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="30元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="大衣"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="5天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="60元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="夹克"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="4天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="30元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="棉衣"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="4天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="40元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="毛衣"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="3天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="30元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="皮衣"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="4天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="40元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="羽绒服"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="5天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="50元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="背心"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="2天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="8元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="衬衫"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="2天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="15元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="西服"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="5天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="60元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+          <View
+              android:background="#339999"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"></View>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+              <TextView
+                  android:gravity="center"
+                  android:text="马甲"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:gravity="center"
+                  android:text="3天"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:text="20元"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent" />
+          </LinearLayout>
+
+      </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

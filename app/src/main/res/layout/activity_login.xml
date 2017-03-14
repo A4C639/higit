@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_aty_login_parent"
+    android:background="#f9f9f9">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:background="#339999"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/iv_aty_login_back"
+                android:background="@drawable/my_app_theme_click_ripple_bg"
+                android:clickable="true"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_back_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:text="登陆"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_person_pin_circle_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:background="@drawable/edt_bg"
+                    android:textColorHint="#e6dede"
+                    android:hint="在这里输入用户名"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edt_aty_login_username" />
+            </LinearLayout>
+
+            <View
+                android:background="#c0c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"></View>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_lock_outline_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:password="true"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:background="@drawable/edt_bg"
+                    android:textColorHint="#e6dede"
+                    android:hint="这里输入密码"
+                    android:id="@+id/edt_aty_login_userpass"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_aty_login"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="立即登陆"
+            android:gravity="center"
+            android:background="@drawable/frg_billlist_center_bg"
+            android:layout_marginTop="40dp"
+            android:layout_width="350dp"
+            android:layout_height="45dp" />
+
+
+        <TextView
+            android:id="@+id/tv_aty_login_reg"
+            android:clickable="true"
+            android:text="用户注册"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/fl_loading_anima_login"
+        android:visibility="gone"
+        android:background="@drawable/fl_anmation_bg"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:indicator="BallZigZagDeflect"
+            app:indicator_color="#fff"
+            />
+        </FrameLayout>
+
+
+
+</FrameLayout>

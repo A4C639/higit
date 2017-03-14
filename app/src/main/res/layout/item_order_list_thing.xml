@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/layout_thing_mkorder"
+    >
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_index_left_item"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/sdv_item_order_list_thing_icon" />
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/tv_item_order_list_thing_name"
+                android:text="物品的名称"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:drawableLeft="@mipmap/ic_attach_money_pressed"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#8e3131"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_item_order_list_thing_price"
+                android:text="22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:text="X"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:text="1"
+                    android:id="@+id/tv_item_order_list_thing_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

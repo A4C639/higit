@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_index_drawer"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+            <LinearLayout
+                android:background="#339999"
+                android:gravity="center_vertical"
+                android:id="@+id/ll_index"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                >
+                <LinearLayout
+
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:background="@drawable/my_app_theme_click_ripple_bg"
+                        android:clickable="true"
+                        android:id="@+id/iv_index_more"
+                        android:padding="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_reorder_normal"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tv_app"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="Compus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <android.support.design.widget.TabLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/index_tablayout"
+                        app:tabSelectedTextColor="#339999"
+                        app:tabTextColor="#615f5f"
+                        app:tabIndicatorColor="#339999"
+                        app:tabGravity="fill"
+                        app:tabIndicatorHeight="1.5dp"
+                        android:scrollIndicators="bottom"
+                        app:tabMode="fixed"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:id="@+id/index_vp"/>
+
+
+
+
+            <!-- 底部导航栏 -->
+            <include layout="@layout/layout_bottom_navigation"></include>
+        </LinearLayout>
+
+
+    <FrameLayout
+        android:clickable="true"
+        android:visibility="invisible"
+        android:background="@color/scrim"
+        android:id="@+id/fl_aty_index_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/al_aty_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_axisRadius="200dp"
+            app:arc_origin="center"
+            app:arc_radius="50dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:src="@mipmap/ic_mood_black_24dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:id="@+id/btn_aty_index_comment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <android.support.design.widget.FloatingActionButton
+                android:src="@mipmap/ic_store_black_24dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:id="@+id/btn_aty_index_introduce"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <android.support.design.widget.FloatingActionButton
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:src="@mipmap/ic_description_black_24dp"
+                android:id="@+id/btn_aty_index_price"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </com.ogaclejapan.arclayout.ArcLayout>
+    </FrameLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:textSize="25dp"
+        android:src="@mipmap/ic_add_white_36dp"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:layout_width="48dp"
+        app:fabSize="normal"
+        android:layout_height="48dp"
+        android:id="@+id/fab_aty_index"/>
+
+
+    </FrameLayout>
+
+    <!-- 侧滑栏布局 -->
+    <include layout="@layout/index_left"/>
+    </android.support.v4.widget.DrawerLayout>
+

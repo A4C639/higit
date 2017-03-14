@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#339999</color>
+    <color name="colorUna">#01339999</color>
+
+
+
+    <color name="scrim">#81000000</color>
+    <color name="my_app_pressed_theme_deep">#215c5c</color>
+    <color name="my_app_pressed_theme_light">#339999</color>
+    <color name="my_app_pressed_white">#fff</color>
+    <color name="my_app_pressed_grey">#dfdfdf</color>
+</resources>

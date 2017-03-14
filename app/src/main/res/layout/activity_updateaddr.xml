@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_aty_thing_top"
+        android:background="#339999"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_aty_updateaddr_back"
+            android:background="@drawable/my_app_theme_click_ripple_bg"
+            android:clickable="true"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="修改地址"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_aty_updateaddr_save"
+            android:background="@drawable/normal_click_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="更改"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_index_left_item"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="收货人"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edt_aty_updateaddr_receiver"
+                android:background="@drawable/edt_bg"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:background="#d4d2d2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="电话"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edt_aty_updateaddr_phone"
+                android:background="@drawable/edt_bg"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:background="#d4d2d2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <EditText
+                android:paddingTop="10dp"
+                android:gravity="start"
+                android:background="@drawable/edt_bg"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/edt_aty_updateaddr_address" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

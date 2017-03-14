@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_aty_shop_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/fl_loading_anima_aty_score_shop"
+        android:visibility="visible"
+        android:background="@drawable/fl_anmation_bg"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:indicator="LineScale"
+            app:indicator_color="#fff"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_aty_shop_actionbar"
+            android:background="#339999"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/iv_aty_shop_back"
+                android:background="@drawable/my_app_theme_click_ripple_bg"
+                android:clickable="true"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_back_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="15dp"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:text="积分商城"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_aty_shop_more"
+                android:clickable="true"
+                android:background="@drawable/my_app_theme_click_ripple_bg"
+                android:padding="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_more_horiz_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_aty_shop_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+    </LinearLayout>
+</FrameLayout>

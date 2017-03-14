@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_frg_bilist_noinfo"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:text="你还没有任何订单哦"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_billist"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_frg_bilist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_frg_bilist_offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:text="您还未登陆,请先登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_frg_billist_login"
+            android:textColor="#fff"
+            android:background="@drawable/frg_billlist_center_bg"
+            android:clickable="true"
+            android:textSize="15sp"
+            android:text="立即登录"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:layout_width="100dp"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

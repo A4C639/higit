@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f9f9f9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:id="@+id/conv_banner"
+            app:canLoop="true"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:padding="20dp"
+                    android:background="@drawable/normal_white_grery_bg"
+                    android:gravity="center"
+                    android:text="裤裙"
+                    android:drawableRight="@mipmap/bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/tv_frg_index_bottom" />
+
+                <View
+                    android:layout_marginTop="1dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#f9f9f9"
+                    />
+                <TextView
+                    android:id="@+id/tv_frg_index_shoes"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:padding="20dp"
+                    android:background="@drawable/normal_white_grery_bg"
+                    android:gravity="center"
+                    android:text="鞋子"
+                    android:drawableRight="@mipmap/shoes"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9f9f9"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_frg_index_top"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:padding="20dp"
+                    android:background="@drawable/normal_rapple"
+                    android:gravity="center"
+                    android:text="衣服"
+                    android:drawableRight="@mipmap/outer"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    />
+                <View
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#f9f9f9"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:padding="20dp"
+                    android:background="@drawable/normal_rapple"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:drawableRight="@mipmap/other"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/tv_frg_index_accessory" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/bg_index_left_item"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp">-->
+
+            <!--<TextView-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/frag_index_item_bg"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="服务介绍"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:drawableTop="@mipmap/ic_store_pressed"-->
+                <!--android:id="@+id/tv_frg_index_introduce" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_frg_index_pricecenter"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/frag_index_item_bg"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="价目中心"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:drawableTop="@mipmap/ic_description_pressed"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_frg_index_comment"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/frag_index_item_bg"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="用户评价"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:drawableTop="@mipmap/ic_mood_pressed"/>-->
+        <!--</LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

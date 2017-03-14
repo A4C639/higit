@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:background="#339999"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_aty_reg_back"
+            android:background="@drawable/my_app_theme_click_ripple_bg"
+            android:clickable="true"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="用户注册"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#fff"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+            <EditText
+                android:textSize="15dp"
+                android:background="@drawable/edt_bg"
+                android:textColorHint="#e6dede"
+                android:hint="输入用户名"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edt_aty_reg_username" />
+
+
+        <View
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"></View>
+
+
+
+
+
+        <EditText
+            android:password="true"
+            android:textSize="15dp"
+            android:background="@drawable/edt_bg"
+            android:textColorHint="#e6dede"
+            android:hint="输入密码"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edt_aty_reg_userpass" />
+
+        <View
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"></View>
+
+
+        <EditText
+            android:password="true"
+            android:textSize="15dp"
+            android:background="@drawable/edt_bg"
+            android:textColorHint="#e6dede"
+            android:hint="重复密码"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edt_aty_reg_again" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_aty_reg_submit"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:text="提交"
+        android:gravity="center"
+        android:background="@drawable/frg_billlist_center_bg"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp" />
+
+
+
+
+</LinearLayout>

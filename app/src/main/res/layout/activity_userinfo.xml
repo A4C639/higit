@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#81e6e4e4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_aty_userinfo_top"
+        android:background="#339999"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_aty_userinfo_back"
+            android:background="@drawable/frg_billlist_center_bg"
+            android:clickable="true"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="个人信息"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_aty_userinfo_more"
+            android:clickable="true"
+            android:background="@drawable/normal_click_bg"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_more_horiz_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <uk.co.senab.photoview.PhotoView
+        android:background="#9affffff"
+        android:layout_gravity="center"
+        android:id="@+id/pv_aty_userinfo_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_when_pick_finish"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_aty_userinfo_when_pick_finish_cancel"
+            android:clickable="true"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="取消"
+            android:background="@drawable/normal_click_bg"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_aty_userinfo_when_pick_finish_cut"
+            android:clickable="true"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="裁切"
+            android:background="@drawable/normal_click_bg"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/tv_aty_userinfo_when_pick_finish_confirm"
+            android:clickable="true"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="确认"
+            android:background="@drawable/normal_click_bg"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+</FrameLayout>
